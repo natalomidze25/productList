@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store App</title>
+    <link rel="stylesheet" type="text/css" href="productList.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+<div class="main-div">
+    <div class="navbar">
+        <ul>
+            <li style="--i:6;"><a href="#">Home</a></li>
+            <li style="--i:5;"><a href="#">About</a></li>
+            <li style="--i:4;"><a href="#">Services</a></li>
+            <li style="--i:3;"><a href="#">Portfolio</a></li>
+            <li style="--i:2;"><a href="#">Our Team</a></li>
+            <li style="--i:1;"><a href="#">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class="discount-div">
+        <p class="discount-p">We have a big discount on our site, hurry up!!</p>
+        <h2 class="sale">Big Sale!!! <i class="fa-solid fa-cart-shopping"></i>  Big Sale!!!  <i class="fa-solid fa-cart-shopping"></i> Big Sale!!!</h2>
+        <p class="discount-p">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
+    </div>
+</div>
+<div class="container">
+    <h1>Store App</h1>
+    <div id="form-list-div">
+        <div id="form-div">
+            <form id="product-form">
+                <h2>Add Product</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price">
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description">
+                <label for="image">Image:</label>
+                <input type="text" id="image" name="image">
+                <button type="submit" id="form-submit">Add Product</button>
+                <input id="id-input" type="hidden">
+            </form>
+            <div id="shopping-cart">
+                <h2>Shopping Cart <i class="fa-solid fa-cart-shopping"></i></h2>
+            </div>
+        </div>
+        <div id="product-list"></div>
+    </div>
+
+
+</div>
+<script src="productList.js"></script>
+</body>
+</html>

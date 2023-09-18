@@ -1,0 +1,230 @@
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-image: url(378100977_348683294254265_5317977767356302477_n.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+
+h1{
+    padding: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    background-color: rgb(194, 190, 190);
+    font-weight: bold;
+    font-size: 2.3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.4rem 1rem;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#product-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+#product-list li strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#product-list li p {
+    color: #666;
+}
+
+#product-list .delte-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-list .delte-button:hover {
+    background-color: #0056b3;
+}
+
+#product-list .edit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-list .edit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the product form */
+#product-form {
+    margin: 1rem 1rem;
+    padding: 2rem 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#product-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#product-form input[type="text"],
+#product-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#product-form button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#product-form button:hover {
+    background-color: #0056b3;
+}
+#form-list-div{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+h2{
+    padding: 1rem 0.5rem;
+}
+#form-div{
+    width: 20%;
+}
+.main-div{
+    display: flex;
+}
+.discount-div >p{
+    font-size: 24px;
+    padding: 1rem 1rem 0rem 1rem;
+    color: white;
+    font-weight: bold;
+}
+.shopping-button{
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.shopping-button:hover{
+    background-color: rgb(49, 76, 103);
+}
+.buttons-div{
+    display: flex;
+    padding: 1.25rem;
+}
+.productDiv{
+    display: flex;
+    flex-direction: column;
+}
+.sale{
+    text-align: center;
+    animation: changeColor 2s linear forwards;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+/*@keyframes changeColor {*/
+/*    0%, 100% {*/
+/*        background: red;*/
+/*    }*/
+/*    50%{*/
+/*        background: yellow;*/
+/*    }*/
+/*}*/
+.sale:hover{
+    background-color: yellow;
+    color: black;
+}
+.discount-p{
+    box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+    background-color: #80808099;
+    margin: 1rem;
+}
+.cart-element{
+    color: black;
+    border: 1px solid white;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+.shop-p{
+    font-size: 1rem;
+}
+.cart-element >p{
+    display: inline-block;
+}
+#shopping-cart{
+    background-color:  rgb(194, 190, 190);
+    color: white;
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+    max-height: 20rem;
+    overflow: auto;
+}
+.delete-shop{
+    padding: 3px;
+    background-color: #3f9ae3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.finish-shop-class{
+    background-color: rgb(0, 123, 255);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:10px;
+}
+
